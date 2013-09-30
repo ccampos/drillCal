@@ -4,3 +4,6 @@ class Day(models.Model):
     exercise_type = models.CharField(max_length=30)
     exert_percent = models.IntegerField(default=85)
     distance = models.FloatField(default=3.11)
+
+    def __unicode__(self):
+        return self.exercise_type
